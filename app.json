@@ -5,7 +5,13 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "android": {
+      "package": "com.thanhnew2001.F0Home"
+    },
+    "ios": {
+      "bundleIdentifier": "com.thanhnew2001.F0Home"
+    }
   },
   "name": "F0Home"
 }
