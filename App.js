@@ -18,7 +18,7 @@ export default function App() {
   return (
     <View style={styles.container}>
 
-      <View style={{ flexDirection: "row" }}>
+      <View style={{ flex: 0.1, flexDirection: "row", alignItems: 'center', flexWrap: 'wrap' }}>
         <Button title='Car' onPress={()=>setPage('Car')}/>
         <Button title='Fruit' onPress={()=>setPage('Fruit')}/>
         <Button title='Fastfood' onPress={()=>setPage('Fastfood')}/>
@@ -26,14 +26,13 @@ export default function App() {
         <Button title='Animal' onPress={()=>setPage('Animal')}/>
         <Button title='Color' onPress={()=>setPage('Color')}/>
       </View>
-        {page==='Car'? <Car/>: ""}
-        {page==='Fruit'? <Fruit/>: ""}
-        {page==='Fastfood'? <Fastfood/>: ""}
-        {page==='Seafood'? <Seafood/>: ""}
-        {page==='Animal'? <Animal/>: ""}
-        {page==='Color'? <Color/>: ""}
-    
-      <StatusBar style="auto" />
+        {page==='Car'? <Car/>: null}
+        {page==='Fruit'? <Fruit/>: null}
+        {page==='Fastfood'? <Fastfood/>: null}
+        {page==='Seafood'? <Seafood/>: null}
+        {page==='Animal'? <Animal/>: null}
+        {page==='Color'? <Color/>: null}
+        
     </View>
   );
 }
@@ -44,5 +43,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    marginTop:50
   },
 });
